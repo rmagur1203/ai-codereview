@@ -4,6 +4,20 @@
 
 ## 🚀 시작하기
 
+### 환경 변수 설정
+
+먼저 `.env.example` 파일을 복사하여 `.env` 파일을 생성하세요:
+
+```bash
+cp .env.example .env
+```
+
+`.env` 파일을 열어 플래그를 설정할 수 있습니다:
+
+```
+VITE_FLAG=KKnock{your_flag_here}
+```
+
 ### 설치
 
 ```bash
@@ -36,6 +50,7 @@ pnpm preview
 - ⭐ 애니메이션 배경 (별 효과)
 - 🌈 그라데이션 및 글리치 효과
 - 🎯 인터랙티브 파티클 효과
+- 🚩 CTF 플래그 표시 기능
 - 📱 반응형 디자인
 - ⚡ Vite 기반 초고속 개발 환경
 - 🔷 TypeScript로 타입 안정성 보장
@@ -58,6 +73,7 @@ pnpm preview
 │   ├── components/
 │   │   ├── CTAButton.tsx      # 메인 CTA 버튼 + 파티클 효과
 │   │   ├── FeatureCard.tsx    # 기능 카드 컴포넌트
+│   │   ├── FlagDisplay.tsx    # CTF 플래그 표시 컴포넌트
 │   │   ├── GlitchText.tsx     # 글리치 효과 텍스트
 │   │   ├── Notification.tsx   # 알림 메시지
 │   │   └── Stars.tsx          # 배경 별 애니메이션
@@ -70,7 +86,9 @@ pnpm preview
 ├── tsconfig.json              # TypeScript 설정
 ├── tailwind.config.js         # Tailwind 설정
 ├── postcss.config.js          # PostCSS 설정
-└── vite.config.ts             # Vite 설정
+├── vite.config.ts             # Vite 설정
+├── .env                       # 환경 변수 (플래그 포함)
+└── .env.example               # 환경 변수 예제
 ```
 
 ## 🎨 주요 컴포넌트
@@ -92,6 +110,17 @@ pnpm preview
 
 ### Notification.tsx
 사용자에게 메시지를 표시하는 알림 컴포넌트입니다.
+
+### FlagDisplay.tsx
+`.env` 파일에서 CTF 플래그를 읽어와 표시/숨기기 기능을 제공하는 컴포넌트입니다.
+
+## 🔧 환경 변수
+
+이 프로젝트는 Vite의 환경 변수를 사용합니다. `.env` 파일에서 다음과 같이 설정할 수 있습니다:
+
+- `VITE_FLAG`: CTF 플래그 값
+
+**주의**: Vite에서 클라이언트에 노출되는 환경 변수는 반드시 `VITE_` prefix를 사용해야 합니다.
 
 ## 📝 라이선스
 

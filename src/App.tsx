@@ -4,6 +4,7 @@ import GlitchText from './components/GlitchText'
 import FeatureCard from './components/FeatureCard'
 import CTAButton from './components/CTAButton'
 import Notification from './components/Notification'
+import FlagDisplay from './components/FlagDisplay'
 
 interface Feature {
   icon: string
@@ -73,6 +74,8 @@ function App() {
         </div>
 
         <CTAButton onClick={handleCTAClick} />
+        
+        <FlagDisplay />
       </div>
     </div>
   )
