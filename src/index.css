@@ -28,17 +28,5 @@
     animation: glitchBottom 2.5s infinite;
     clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   }
-
-  .stars-bg {
-    background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="2" height="2"><circle cx="1" cy="1" r="1" fill="white"/></svg>') repeat;
-  }
-
-  .stars2-bg {
-    background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"><circle cx="1.5" cy="1.5" r="1.5" fill="white" opacity="0.7"/></svg>') repeat;
-  }
-
-  .stars3-bg {
-    background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><circle cx="2" cy="2" r="2" fill="white" opacity="0.5"/></svg>') repeat;
-  }
 }
 

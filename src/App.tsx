@@ -1,54 +1,54 @@
-import { useState } from 'react'
-import Stars from './components/Stars'
-import GlitchText from './components/GlitchText'
-import FeatureCard from './components/FeatureCard'
-import CTAButton from './components/CTAButton'
-import Notification from './components/Notification'
-import FlagDisplay from './components/FlagDisplay'
+import { useState } from "react";
+import Stars from "./components/Stars";
+import GlitchText from "./components/GlitchText";
+import FeatureCard from "./components/FeatureCard";
+import CTAButton from "./components/CTAButton";
+import Notification from "./components/Notification";
+import FlagDisplay from "./components/FlagDisplay";
 
 interface Feature {
-  icon: string
-  title: string
-  description: string
+  icon: string;
+  title: string;
+  description: string;
 }
 
 function App() {
-  const [showNotification, setShowNotification] = useState(false)
+  const [showNotification, setShowNotification] = useState(false);
 
   const features: Feature[] = [
     {
-      icon: '🔐',
-      title: '보안 챌린지',
-      description: '다양한 분야의 보안 문제',
+      icon: "🔐",
+      title: "보안 챌린지",
+      description: "다양한 분야의 보안 문제",
     },
     {
-      icon: '🏆',
-      title: '경쟁과 성장',
-      description: '실력을 겨루고 배우세요',
+      icon: "🏆",
+      title: "경쟁과 성장",
+      description: "실력을 겨루고 배우세요",
     },
     {
-      icon: '🚀',
-      title: '새로운 도전',
-      description: '2025년 새로운 시작',
+      icon: "🚀",
+      title: "새로운 도전",
+      description: "2025년 새로운 시작",
     },
-  ]
+  ];
 
   const handleCTAClick = () => {
-    setShowNotification(true)
-    setTimeout(() => setShowNotification(false), 3500)
-  }
+    setShowNotification(true);
+    setTimeout(() => setShowNotification(false), 3500);
+  };
 
   return (
-    <div className="min-h-screen relative flex justify-center items-center bg-gradient-to-br from-[#0a0a0a] via-[#1a0a2e] to-[#16213e] overflow-hidden">
+    <div className="min-h-screen relative flex justify-center items-center bg-gradient-to-br from-[#000000] via-[#0a0a1a] to-[#0d1117] overflow-hidden">
       <Stars />
-      
+
       {showNotification && (
         <Notification message="🎉 2025 KKnock CTF에 오신 것을 환영합니다!" />
       )}
 
       <div className="text-center z-10 p-8 max-w-4xl animate-fade-in-up">
         <GlitchText text="Welcome To" />
-        
+
         <h2 className="text-6xl md:text-7xl font-black mb-8 bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-yellow-400 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-shift [text-shadow:0_0_30px_rgba(0,245,255,0.5)]">
           2025 KKnock CTF
         </h2>
@@ -74,12 +74,11 @@ function App() {
         </div>
 
         <CTAButton onClick={handleCTAClick} />
-        
+
         <FlagDisplay />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
