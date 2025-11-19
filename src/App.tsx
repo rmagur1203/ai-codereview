@@ -43,14 +43,14 @@ function App() {
       <Stars />
 
       {showNotification && (
-        <Notification message="🎉 2025 KKnock CTF에 오신 것을 환영합니다!" />
+        <Notification message="🎉 2026 KKnock CTF에 오신 것을 환영합니다!" />
       )}
 
       <div className="text-center z-10 p-8 max-w-4xl animate-fade-in-up">
         <GlitchText text="Welcome To" />
 
         <h2 className="text-6xl md:text-7xl font-black mb-8 bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-yellow-400 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient-shift [text-shadow:0_0_30px_rgba(0,245,255,0.5)]">
-          2025 KKnock CTF
+          2026 KKnock CTF
         </h2>
 
         <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 my-8 max-w-2xl mx-auto shadow-[0_8px_32px_rgba(0,245,255,0.1)]">
